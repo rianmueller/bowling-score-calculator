@@ -3,7 +3,7 @@ exports.scoring = card => {
 
   for (let i = 0; i < card.length; i++) {
     // tenth frame
-    if (card[9][0] + card[9][1] >= 10) {
+    if (i === 9 && card[9][0] + card[9][1] >= 10) {
       score = score + card[9][0] + card[9][1] + card[9][2];
     }
     // strike

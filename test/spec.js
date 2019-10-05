@@ -37,7 +37,7 @@ describe("Scoring of bowling games", function() {
     score.should.equal(64);
   });
 
-  it("Should score 156 for prettyGoodGame", function() {
+  it("Should score 165 for prettyGoodGame", function() {
     let prettyGoodGame = [
       [9, 1],
       [8, 1],
@@ -51,10 +51,10 @@ describe("Scoring of bowling games", function() {
       [9, 1, 8]
     ];
     let score = scoring.scoring(prettyGoodGame);
-    score.should.equal(156);
+    score.should.equal(165);
   });
 
-  it("Should score 215 for greatGame", function() {
+  it("Should score 214 for greatGame", function() {
     let greatGame = [
       [10],
       [8, 2],
@@ -68,7 +68,7 @@ describe("Scoring of bowling games", function() {
       [10, 9, 1]
     ];
     let score = scoring.scoring(greatGame);
-    score.should.equal(215);
+    score.should.equal(214);
   });
 
   it("Should score 268 for awesomeGame", function() {
