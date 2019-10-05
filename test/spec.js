@@ -1,4 +1,4 @@
-const scoring = require("./bowling.js");
+const scoring = require("./../bowling.js");
 const chai = require("chai");
 const should = chai.should();
 
@@ -16,7 +16,7 @@ describe("Scoring of bowling games", function() {
       [0, 0],
       [0, 0]
     ];
-    let score = bowling.scoring(allGutters);
+    let score = scoring.scoring(allGutters);
     score.should.equal(0);
   });
 
@@ -33,7 +33,7 @@ describe("Scoring of bowling games", function() {
       [0, 7],
       [4, 2]
     ];
-    let score = bowling.scoring(weakGame);
+    let score = scoring.scoring(weakGame);
     score.should.equal(64);
   });
 
@@ -50,7 +50,7 @@ describe("Scoring of bowling games", function() {
       [10],
       [9, 1, 8]
     ];
-    let score = bowling.scoring(prettyGoodGame);
+    let score = scoring.scoring(prettyGoodGame);
     score.should.equal(156);
   });
 
@@ -67,7 +67,7 @@ describe("Scoring of bowling games", function() {
       [9, 1],
       [10, 9, 1]
     ];
-    let score = bowling.scoring(greatGame);
+    let score = scoring.scoring(greatGame);
     score.should.equal(215);
   });
 
@@ -84,7 +84,7 @@ describe("Scoring of bowling games", function() {
       [10],
       [10, 10, 10]
     ];
-    let score = bowling.scoring(awesomeGame);
+    let score = scoring.scoring(awesomeGame);
     score.should.equal(268);
   });
 
@@ -101,7 +101,7 @@ describe("Scoring of bowling games", function() {
       [10],
       [10, 10, 10]
     ];
-    let score = bowling.scoring(perfectGame);
+    let score = scoring.scoring(perfectGame);
     score.should.equal(300);
   });
 });

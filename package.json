@@ -2,9 +2,9 @@
   "name": "bowling-score-calculator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bowling.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --bail --watch"
   },
   "keywords": [],
   "author": "",
